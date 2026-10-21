@@ -31,8 +31,8 @@ For a full list of publications, please refer to [this page](https://scholar.goo
     <p class="pub-entry__venue">arXiv preprint, 2026</p>
     <div class="pub-entry__links">
       <a href="https://arxiv.org/abs/2610.28589">Paper</a>
-      <a href="https://github.com/L-CodingSpace/AgenticRoboRL">Code</a>
-      <a href="https://l-codingspace.github.io/AgenticRoboRL/">Project Page</a>
+      <a href="https://github.com/xinxinliu-ai/AgenticRoboRL">Code</a>
+      <a href="https://xinxinliu-ai.github.io/AgenticRoboRL/">Project Page</a>
     </div>
     <p class="pub-entry__tldr">The first general post-training framework for agentic robotics systems.</p>
   </div>
@@ -46,8 +46,8 @@ For a full list of publications, please refer to [this page](https://scholar.goo
     <p class="pub-entry__venue">arXiv preprint, 2025</p>
     <div class="pub-entry__links">
       <a href="https://arxiv.org/abs/2511.13853">Paper</a>
-      <a href="https://github.com/L-CodingSpace/GVR">Code</a>
-      <a href="https://l-codingspace.github.io/gvr_web/">Project Page</a>
+      <a href="https://github.com/xinxinliu-ai/GVR">Code</a>
+      <a href="https://xinxinliu-ai.github.io/gvr_web/">Project Page</a>
       <a href="https://huggingface.co/datasets/ciciciciliu/Gen-Vire_ds">Dataset</a>
     </div>
     <p class="pub-entry__tldr">The first benchmark for evaluating reasoning in video generation models.</p>
@@ -62,7 +62,7 @@ For a full list of publications, please refer to [this page](https://scholar.goo
     <p class="pub-entry__venue">International Conference on Learning Representations (ICLR), 2026</p>
     <div class="pub-entry__links">
       <a href="https://arxiv.org/abs/2604.24952">Paper</a>
-      <a href="https://github.com/L-CodingSpace/Semi-DPO">Code</a>
+      <a href="https://github.com/xinxinliu-ai/Semi-DPO">Code</a>
       <a href="https://liming-ai.github.io/SemiDPO/">Project Page</a>
     </div>
     <p class="pub-entry__tldr">Uses the diffusion model itself as the reward model, with no architecture changes.</p>

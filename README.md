@@ -1,4 +1,4 @@
-# l-codingspace.github.io
+# xinxinliu-ai.github.io
 
 Personal homepage of Xinxin Liu, built with Jekyll on the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template.
 

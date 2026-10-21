@@ -1,0 +1,7 @@
+# Header links. Each one jumps to a section on the single home page.
+main:
+  - title: "About"
+    url: /
+
+  - title: "Publications"
+    url: /#selected-publications

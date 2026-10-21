@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Home page: call-out box and publication entries
+   ========================================================================== */
+
+$hp-accent: #e8732c;
+
+/* Use the empty right-hand gutter for content, and hide the empty fixed footer */
+.page {
+  @include breakpoint($large) {
+    @include suffix(0.5 of 12);
+  }
+}
+
+.page__footer {
+  display: none;
+}
+
+/* Collaboration / internship call-out */
+.callout {
+  margin: 1.5em 0;
+  padding: 0.8em 1.2em;
+  border-left: 4px solid $hp-accent;
+  border-radius: 4px;
+  background-color: rgba($hp-accent, 0.1);
+  line-height: 1.7;
+
+  p {
+    margin: 0;
+  }
+
+  strong {
+    color: $hp-accent;
+  }
+}
+
+/* Publication entry: teaser on the left, text on the right */
+.pub-entry {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+  margin: 1.75em 0;
+
+  &__thumb {
+    flex: 0 0 260px;
+
+    img {
+      display: block;
+      width: 260px;
+      height: 160px;
+      padding: 4px;
+      object-fit: contain;
+      background-color: #fff;
+      border: 1px solid var(--global-border-color);
+      border-radius: 6px;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.85em;
+    line-height: 1.5;
+
+    h3 {
+      margin: 0 0 0.3em;
+      font-size: 1.05em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__venue {
+    font-style: italic;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    margin: 0.7em 0;
+
+    a {
+      padding: 0.25em 0.9em;
+      border: 1px solid var(--global-text-color);
+      color: var(--global-text-color);
+      font-size: 0.85em;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+
+      &:hover {
+        border-color: $hp-accent;
+        color: $hp-accent;
+      }
+    }
+  }
+
+  &__tldr {
+    color: $hp-accent;
+    font-style: italic;
+  }
+
+  @include breakpoint(max-width $small) {
+    flex-direction: column;
+    gap: 0.75em;
+
+    &__thumb {
+      flex-basis: auto;
+
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        max-height: 260px;
+      }
+    }
+  }
+}

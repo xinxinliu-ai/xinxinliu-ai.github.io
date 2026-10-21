@@ -3,6 +3,31 @@
    ========================================================================== */
 
 $hp-accent: #e8732c;
+$bp-pink: #ff8fbf;
+
+/* Accent colors: orange in light mode, Blackpink (black + pink) in dark mode */
+:root {
+  --hp-accent: #{$hp-accent};
+  --hp-accent-soft: #{rgba($hp-accent, 0.1)};
+}
+
+html[data-theme="dark"] {
+  --hp-accent: #{$bp-pink};
+  --hp-accent-soft: #{rgba($bp-pink, 0.08)};
+
+  --global-base-color                 : #{$bp-pink};
+  --global-bg-color                   : #0b0b0b;
+  --global-footer-bg-color            : #0b0b0b;
+  --global-border-color               : #2c2c2c;
+  --global-dark-border-color          : #2c2c2c;
+  --global-link-color                 : #{$bp-pink};
+  --global-link-color-hover           : #{mix(#fff, $bp-pink, 30%)};
+  --global-link-color-visited         : #{$bp-pink};
+  --global-masthead-link-color        : #f2f2f2;
+  --global-masthead-link-color-hover  : #{$bp-pink};
+  --global-text-color                 : #ececec;
+  --global-text-color-light           : #bdbdbd;
+}
 
 /* Use the empty right-hand gutter for content, and hide the empty fixed footer */
 .page {
@@ -19,9 +44,9 @@ $hp-accent: #e8732c;
 .callout {
   margin: 1.5em 0;
   padding: 0.8em 1.2em;
-  border-left: 4px solid $hp-accent;
+  border-left: 4px solid var(--hp-accent);
   border-radius: 4px;
-  background-color: rgba($hp-accent, 0.1);
+  background-color: var(--hp-accent-soft);
   line-height: 1.7;
 
   p {
@@ -29,7 +54,7 @@ $hp-accent: #e8732c;
   }
 
   strong {
-    color: $hp-accent;
+    color: var(--hp-accent);
   }
 }
 
@@ -91,14 +116,14 @@ $hp-accent: #e8732c;
       letter-spacing: 0.03em;
 
       &:hover {
-        border-color: $hp-accent;
-        color: $hp-accent;
+        border-color: var(--hp-accent);
+        color: var(--hp-accent);
       }
     }
   }
 
   &__tldr {
-    color: $hp-accent;
+    color: var(--hp-accent);
     font-style: italic;
   }
 
@@ -142,6 +167,6 @@ $hp-accent: #e8732c;
   }
 
   &:hover {
-    color: $hp-accent;
+    color: var(--hp-accent);
   }
 }

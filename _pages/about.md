@@ -21,6 +21,8 @@ In research, I like to *ride the wave*: I'm willing to step out of my comfort zo
 
 ## Selected Publications
 
+For a full list of publications, please refer to [this page](https://scholar.google.com/citations?user=_mAxAhkAAAAJ).
+
 <div class="pub-entry">
   <div class="pub-entry__thumb"><img src="/images/teasers/agenticroborl.jpg" alt="AgenticRoboRL teaser"></div>
   <div class="pub-entry__body">
